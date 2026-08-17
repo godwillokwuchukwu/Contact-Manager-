@@ -1,0 +1,169 @@
+{
+  "users": {
+    "alice": {
+      "password_hash": "f52fbd32b2b3b86ff88ef6c490628285f482af15ddcb29541f94bcf526a3f6c7",
+      "created_at": "2026-08-15T07:22:17.427693+00:00",
+      "contacts": {
+        "Jonathan Smith": {
+          "phone": "555-9999",
+          "email": "jsmith@acme.com",
+          "company": "Acme",
+          "notes": "",
+          "created_at": "2026-08-15T07:22:17.427752+00:00",
+          "updated_at": "2026-08-15T07:22:17.427752+00:00"
+        },
+        "Barbara Lane": {
+          "phone": "555-4321",
+          "email": "barb@beta.com",
+          "company": "Beta",
+          "notes": "",
+          "created_at": "2026-08-15T07:22:17.427762+00:00",
+          "updated_at": "2026-08-15T07:22:17.427762+00:00"
+        }
+      }
+    },
+    "bob": {
+      "password_hash": "b9f195c5cc7ef6afadbfbc42892ad47d3b24c6bc94bb510c4564a90a14e8b799",
+      "created_at": "2026-08-15T07:22:17.427733+00:00",
+      "contacts": {
+        "Carla Diaz": {
+          "phone": "555-0001",
+          "email": "carla@gamma.com",
+          "company": "Gamma",
+          "notes": "",
+          "created_at": "2026-08-15T07:22:17.428127+00:00",
+          "updated_at": "2026-08-15T07:22:17.428127+00:00"
+        }
+      }
+    }
+  },
+  "operation_log": [
+    {
+      "timestamp": "2026-08-15T07:22:17.427715+00:00",
+      "user": "alice",
+      "action": "register"
+    },
+    {
+      "timestamp": "2026-08-15T07:22:17.427737+00:00",
+      "user": "bob",
+      "action": "register"
+    },
+    {
+      "timestamp": "2026-08-15T07:22:17.427746+00:00",
+      "user": "alice",
+      "action": "login"
+    },
+    {
+      "timestamp": "2026-08-15T07:22:17.427756+00:00",
+      "user": "alice",
+      "action": "add_contact",
+      "contact": "Jonathan Smith"
+    },
+    {
+      "timestamp": "2026-08-15T07:22:17.427972+00:00",
+      "user": "alice",
+      "action": "add_contact",
+      "contact": "Barbara Lane"
+    },
+    {
+      "timestamp": "2026-08-15T07:22:17.428101+00:00",
+      "user": "alice",
+      "action": "fuzzy_search",
+      "query": "Jonathon Smith",
+      "result_count": 1
+    },
+    {
+      "timestamp": "2026-08-15T07:22:17.428107+00:00",
+      "user": "alice",
+      "action": "logout"
+    },
+    {
+      "timestamp": "2026-08-15T07:22:17.428121+00:00",
+      "user": "bob",
+      "action": "login"
+    },
+    {
+      "timestamp": "2026-08-15T07:22:17.428131+00:00",
+      "user": "bob",
+      "action": "add_contact",
+      "contact": "Carla Diaz"
+    },
+    {
+      "timestamp": "2026-08-15T07:22:17.428135+00:00",
+      "user": "bob",
+      "action": "logout"
+    },
+    {
+      "timestamp": "2026-08-15T07:22:17.428142+00:00",
+      "user": "alice",
+      "action": "login"
+    },
+    {
+      "timestamp": "2026-08-15T07:23:00.461179+00:00",
+      "user": "alice",
+      "action": "login"
+    },
+    {
+      "timestamp": "2026-08-15T07:23:00.461305+00:00",
+      "user": "alice",
+      "action": "fuzzy_search",
+      "query": "Jonathon Smith",
+      "result_count": 1
+    },
+    {
+      "timestamp": "2026-08-15T07:23:00.461313+00:00",
+      "user": "alice",
+      "action": "logout"
+    },
+    {
+      "timestamp": "2026-08-15T07:23:00.461324+00:00",
+      "user": "bob",
+      "action": "login"
+    },
+    {
+      "timestamp": "2026-08-15T07:23:00.461331+00:00",
+      "user": "bob",
+      "action": "logout"
+    },
+    {
+      "timestamp": "2026-08-15T07:23:00.461337+00:00",
+      "user": "alice",
+      "action": "login"
+    },
+    {
+      "timestamp": "2026-08-17T00:20:55.533006+00:00",
+      "user": "alice",
+      "action": "login"
+    },
+    {
+      "timestamp": "2026-08-17T00:20:55.533174+00:00",
+      "user": "alice",
+      "action": "fuzzy_search",
+      "query": "Jonathon Smith",
+      "result_count": 1
+    },
+    {
+      "timestamp": "2026-08-17T00:20:55.533182+00:00",
+      "user": "alice",
+      "action": "logout"
+    },
+    {
+      "timestamp": "2026-08-17T00:20:55.533204+00:00",
+      "user": "bob",
+      "action": "login"
+    },
+    {
+      "timestamp": "2026-08-17T00:20:55.533211+00:00",
+      "user": "bob",
+      "action": "logout"
+    },
+    {
+      "timestamp": "2026-08-17T00:20:55.533217+00:00",
+      "user": "alice",
+      "action": "login"
+    }
+  ],
+  "search_counts": {
+    "alice::Jonathan Smith": 3
+  }
+}
